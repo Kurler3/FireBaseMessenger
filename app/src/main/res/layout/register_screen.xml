@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#217E24"
+    tools:context=".authentication.RegisterScreen">
+
+    <EditText
+        android:id="@+id/register_username_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Username"
+        android:paddingLeft="16dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/register_email_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:paddingLeft="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/register_username_edit_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_username_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/register_username_edit_text" />
+
+    <EditText
+        android:id="@+id/register_password_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:paddingLeft="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/register_email_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/register_email_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/register_email_edit_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
